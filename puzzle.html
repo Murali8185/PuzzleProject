@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>this is my web page</title>
+	<link rel="stylesheet" type="text/css" href="puzzle.css">
+	<script type="text/javascript" src="puzzle.js"></script>
+</head>
+<body>
+
+	<div class="form">
+	<form action="prac.jsp" method="get">
+		<div class="title-div">
+			<h1>Puzzle</h1>
+			<p class="required">*Required</p>
+		</div>
+
+		<div class="clue1">
+			<div class="name">clue 1</div>
+			<div class="name">Message privately</div>		
+		</div>
+
+		<div class="clue2">
+			<div class="name">clue 2</div>
+			<div class="name">Stay connected.</div>
+		</div>
+
+		<div class="clue3">
+			<div class="name">clue 3</div>
+			<div class="name">Build community.</div>
+		</div>
+		<div class="clue4">
+			<div class="name">clue 4</div>
+			<div class="name">Express yourself</div>
+		</div>
+		<div class="clue5">
+			<div class="name">clue 5</div>
+			<div class="name">Sharing</div>
+		</div>
+		<div class="ans">
+			<div class="name">Enter  your Answer</div>
+			<div class="input-div">
+				<input type="input" name="answer" id="answer" placeholder="Your answer">
+			</div>
+			<span id="error">`</span><br>
+		</div>
+
+		<div>
+			<button class="btn" id="btn" onclick="validate(event)">Submit</button>
+		</div>
+
+		</form>
+	</div>
+
+</body>
+</html>

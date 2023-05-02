@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+var time=localStorage.getItem("time");
+document.addEventListener("DOMContentLoaded", () => {
+	 document.getElementById('time').innerText = time;
+});
+</script> 
+</head>
+<body>
+<header>correct</header>
+<div>Time taken to answer the question</div>
+<h1 id="time"></h1>
+</body>
+</html>

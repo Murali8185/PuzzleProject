@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="registration.css" />
+    <script type="text/javascript" src="registration.js"></script>
+</head>
+
+<body>
+<div class="login-box" style="width:550px;top:300px">
+<form action="regitrationDB.jsp" method="get">
+    <h2>Register</h2>
+    <div class="user-box">
+        <label for="uname" style="color:azure"><b>Username:</b></label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    	<input type="text" style="width:250px" placeholder="Username" name="uname" id = "uname">
+      	<span id="uerror"></span><br>
+      </div>
+      <div class="user-box">
+        <label for="email" style="color:azure"><b>E-mail:</b></label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    	<input type="email" style="width:250px" placeholder="murali@gmail.com" name="email" id="email">
+    	<span id="ferror"></span><br>
+      </div>
+      
+      <div class="user-box">
+        <label for="pass" style="color:azure"><b>Password:</b></label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    	<input type="text" style="width:250px" placeholder="Password" name="pass" id = "pass">
+      	<span id="perror"></span><br>
+      </div>
+      <div class="user-box">
+        <label for="cpass" style="color:azure"><b>Confirm Password:</b></label>
+    	<input type="text" style="width:250px" placeholder="Confirm Password" name="cpass" id="cpass">
+      	<span id="cperror"></span><br>
+      </div>
+      
+    <button onclick="validate(event)">Register</button>  
+    </form>
+  </div>
+
+  
+</body>
+
+</html>
